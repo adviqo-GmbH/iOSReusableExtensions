@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "iOSReusableExtensions"
   s.version      = "1.0.0"
-  s.summary      = "Set of useful swift extensions"
+  s.summary      = "Set of useful Swift extensions"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  Set of useful swift extensions for Foundation and UIKit
+  Set of useful Swift extensions for Foundation and UIKit
                    DESC
 
-  s.homepage     = "http://EXAMPLE/iOSReusableExtensions"
+  s.homepage     = "https://github.com/adviqo-GmbH/iOSReusableExtensions"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :path => '.' }
+  s.source       = { :git => "https://github.com/adviqo-GmbH/iOSReusableExtensions.git", :tag => "1.0.0" }
   # s.source       = { :git => "http://EXAMPLE/ReusableExtensions.git", :tag => "#{s.version}" }
 
 
