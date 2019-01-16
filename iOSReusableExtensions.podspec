@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOSReusableExtensions"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "Set of useful Swift extensions"
 
   # This description is used to generate tags and improve search results.
@@ -116,6 +116,7 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
+  s.resources = "iOSReusableExtensions/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -128,6 +129,8 @@ Pod::Spec.new do |s|
 
   s.framework  = "Foundation"
   s.framework  = "UIKit"
+  s.framework  = "CoreLocation"
+  s.framework  = "LocalAuthentication"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -143,6 +146,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "InputMask", "~> 4.0"
 
 end

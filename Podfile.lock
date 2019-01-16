@@ -1,0 +1,16 @@
+PODS:
+  - InputMask (4.0.2)
+
+DEPENDENCIES:
+  - InputMask (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - InputMask
+
+SPEC CHECKSUMS:
+  InputMask: b9df7a44c044f59485b2d596661e6bd4334bddb4
+
+PODFILE CHECKSUM: a29eaf83ff6feb796f88ede3fa0f0a1462fbd013
+
+COCOAPODS: 1.5.3
