@@ -43,7 +43,7 @@ public extension String
     }
 }
 
-private func amountRegex(separator: String, decimalPlaces: Int) ->String
+private func amountRegex(separator: String, decimalPlaces: Int) -> String
 {
     return "^[0-9]+(?:\\\(separator)[0-9]{0,\(decimalPlaces)})?$"
 }

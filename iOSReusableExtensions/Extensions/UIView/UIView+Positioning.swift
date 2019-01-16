@@ -170,7 +170,8 @@ import UIKit
     // MARK: - Useful Methods
     
     /// Center view to it's parent view.
-    func centerToParent() {
+    func centerToParent()
+    {
         guard let superview = self.superview else { return }
         
         switch UIApplication.shared.statusBarOrientation {
@@ -186,7 +187,8 @@ import UIKit
     }
     
     // MARK: - Private Methods
-    fileprivate func _pixelIntegral(_ pointValue: CGFloat) -> CGFloat {
+    fileprivate func _pixelIntegral(_ pointValue: CGFloat) -> CGFloat
+    {
         let scale = UIScreen.main.scale
         return (round(pointValue * scale) / scale)
     }

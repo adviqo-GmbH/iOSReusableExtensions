@@ -7,16 +7,15 @@
 //
 import UIKit
 
-public extension UIApplication
+@objc public extension UIApplication
 {
+    @objc var topViewController: UIViewController?
+    {
+        return UIApplication.topViewController()
+    }
+    
     public class func topViewController(_ viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
     {
-        /*
-         if let nav = viewController as? UINavigationController {
-         return topViewController(nav.viewControllers.last)
-         }
-         */
-        
         // UINavigationController
         if let nav = viewController as? UINavigationController {
             return topViewController(nav.visibleViewController)

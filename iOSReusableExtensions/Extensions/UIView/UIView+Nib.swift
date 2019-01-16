@@ -16,7 +16,7 @@ public extension UIView
         return Bundle(for: viewType).loadNibNamed(className, owner: nil, options: nil)!.first as! T
     }
     
-    public class func loadNib() -> Self
+    @objc public class func loadNib() -> Self
     {
         return loadNib(self)
     }

@@ -56,6 +56,7 @@
 		093040B321ECF4CE009027E7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408321ECF4CE009027E7 /* DateExtension.swift */; };
 		093040B421ECF4CE009027E7 /* UIScrollView+scrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408421ECF4CE009027E7 /* UIScrollView+scrollTo.swift */; };
 		093040B521ECF4CE009027E7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408521ECF4CE009027E7 /* UITableView+Extension.swift */; };
+		099BB12E21EF74B900942CE2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BB12D21EF74B900942CE2 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		0930408321ECF4CE009027E7 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		0930408421ECF4CE009027E7 /* UIScrollView+scrollTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+scrollTo.swift"; sourceTree = "<group>"; };
 		0930408521ECF4CE009027E7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		099BB12D21EF74B900942CE2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,9 +222,9 @@
 			isa = PBXGroup;
 			children = (
 				0930406421ECF4CD009027E7 /* Evaluatable.swift */,
-				0930406521ECF4CD009027E7 /* UserInputValidationType.swift */,
 				0930406621ECF4CD009027E7 /* Validatable.swift */,
 				0930406721ECF4CD009027E7 /* String+Evaluatable.swift */,
+				0930406521ECF4CD009027E7 /* UserInputValidationType.swift */,
 				0930406821ECF4CD009027E7 /* ValidationRule.swift */,
 			);
 			path = InputValidation;
@@ -231,6 +233,7 @@
 		0930406921ECF4CD009027E7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				099BB12C21EF749F00942CE2 /* UIImage */,
 				0930406A21ECF4CD009027E7 /* UIImage+resizeImage.swift */,
 				0930406B21ECF4CD009027E7 /* UIColor+Extension.swift */,
 				0930406C21ECF4CD009027E7 /* UIImageView+imageColor.swift */,
@@ -282,6 +285,14 @@
 				0930408121ECF4CE009027E7 /* String+Double.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		099BB12C21EF749F00942CE2 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				099BB12D21EF74B900942CE2 /* UIImage+Extension.swift */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +409,7 @@
 				0930408821ECF4CE009027E7 /* State.swift in Sources */,
 				0930409721ECF4CE009027E7 /* PropertyLoopable.swift in Sources */,
 				093040AD21ECF4CE009027E7 /* UIBarButtonItem+Extension.swift in Sources */,
+				099BB12E21EF74B900942CE2 /* UIImage+Extension.swift in Sources */,
 				093040A021ECF4CE009027E7 /* UIView+Parent+ScrollView.swift in Sources */,
 				093040B321ECF4CE009027E7 /* DateExtension.swift in Sources */,
 				093040A421ECF4CE009027E7 /* UIView+Nib.swift in Sources */,

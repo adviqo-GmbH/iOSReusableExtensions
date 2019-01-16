@@ -70,9 +70,9 @@ public extension String
         return cleanedString
     }
     
-//    public var localized: String {
-//        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
-//    }
+    public var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+    }
     
     public var isValidURL: Bool {
         if self.contains("http://") {

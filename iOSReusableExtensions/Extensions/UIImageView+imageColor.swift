@@ -8,9 +8,9 @@
 
 import UIKit
 
-public extension UIImageView
+@objc public extension UIImageView
 {
-    public var imageColor: UIColor? {
+    @objc public var imageColor: UIColor? {
         get {
             return self.tintColor
         }
