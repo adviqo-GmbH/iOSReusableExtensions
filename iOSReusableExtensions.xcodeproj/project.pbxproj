@@ -36,10 +36,14 @@
 		093040B021ECF4CE009027E7 /* String+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408021ECF4CE009027E7 /* String+Optional.swift */; };
 		093040B121ECF4CE009027E7 /* String+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408121ECF4CE009027E7 /* String+Double.swift */; };
 		093040B221ECF4CE009027E7 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408221ECF4CE009027E7 /* UITextField+Extension.swift */; };
-		093040B321ECF4CE009027E7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408321ECF4CE009027E7 /* DateExtension.swift */; };
+		093040B321ECF4CE009027E7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408321ECF4CE009027E7 /* Date+Extension.swift */; };
 		093040B421ECF4CE009027E7 /* UIScrollView+scrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408421ECF4CE009027E7 /* UIScrollView+scrollTo.swift */; };
 		093040B521ECF4CE009027E7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930408521ECF4CE009027E7 /* UITableView+Extension.swift */; };
 		099BB12E21EF74B900942CE2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BB12D21EF74B900942CE2 /* UIImage+Extension.swift */; };
+		099BB13021EF8E2E00942CE2 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BB12F21EF8E2E00942CE2 /* FileManager+Extension.swift */; };
+		099BB13221EF8ECC00942CE2 /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BB13121EF8ECC00942CE2 /* UINavigationBar+Extension.swift */; };
+		099BB13421EF8FAE00942CE2 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BB13321EF8FAE00942CE2 /* CAGradientLayer+Extension.swift */; };
+		099BB13621EF918E00942CE2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BB13521EF918E00942CE2 /* Utility.swift */; };
 		87376154E463629DC2F9D59F /* libPods-iOSReusableExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4226A43C79CA6AD19690C0FE /* libPods-iOSReusableExtensions.a */; };
 /* End PBXBuildFile section */
 
@@ -75,10 +79,14 @@
 		0930408021ECF4CE009027E7 /* String+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Optional.swift"; sourceTree = "<group>"; };
 		0930408121ECF4CE009027E7 /* String+Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Double.swift"; sourceTree = "<group>"; };
 		0930408221ECF4CE009027E7 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
-		0930408321ECF4CE009027E7 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		0930408321ECF4CE009027E7 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		0930408421ECF4CE009027E7 /* UIScrollView+scrollTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+scrollTo.swift"; sourceTree = "<group>"; };
 		0930408521ECF4CE009027E7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		099BB12D21EF74B900942CE2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		099BB12F21EF8E2E00942CE2 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		099BB13121EF8ECC00942CE2 /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		099BB13321EF8FAE00942CE2 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
+		099BB13521EF918E00942CE2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		4226A43C79CA6AD19690C0FE /* libPods-iOSReusableExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSReusableExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B261192BC5110B8BCAE81074 /* Pods-iOSReusableExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSReusableExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSReusableExtensions/Pods-iOSReusableExtensions.release.xcconfig"; sourceTree = "<group>"; };
 		D336FD904BA4C90B088B64BD /* Pods-iOSReusableExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSReusableExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSReusableExtensions/Pods-iOSReusableExtensions.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				0930406221ECF4CD009027E7 /* PropertyLoopable.swift */,
+				099BB13521EF918E00942CE2 /* Utility.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -158,13 +167,16 @@
 				0930407621ECF4CD009027E7 /* UIViewController+Extension.swift */,
 				0930407721ECF4CD009027E7 /* UIDevice */,
 				0930407A21ECF4CD009027E7 /* UIApplication+topViewController.swift */,
-				0930407B21ECF4CD009027E7 /* UICollectionView+Extension.swift */,
 				0930407C21ECF4CD009027E7 /* UIBarButtonItem+Extension.swift */,
 				0930407D21ECF4CD009027E7 /* String */,
 				0930408221ECF4CE009027E7 /* UITextField+Extension.swift */,
-				0930408321ECF4CE009027E7 /* DateExtension.swift */,
+				0930408321ECF4CE009027E7 /* Date+Extension.swift */,
 				0930408421ECF4CE009027E7 /* UIScrollView+scrollTo.swift */,
 				0930408521ECF4CE009027E7 /* UITableView+Extension.swift */,
+				0930407B21ECF4CD009027E7 /* UICollectionView+Extension.swift */,
+				099BB12F21EF8E2E00942CE2 /* FileManager+Extension.swift */,
+				099BB13321EF8FAE00942CE2 /* CAGradientLayer+Extension.swift */,
+				099BB13121EF8ECC00942CE2 /* UINavigationBar+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,6 +351,7 @@
 				093040B121ECF4CE009027E7 /* String+Double.swift in Sources */,
 				093040A221ECF4CE009027E7 /* UIView+snapshotView.swift in Sources */,
 				093040A521ECF4CE009027E7 /* UIView+Positioning.swift in Sources */,
+				099BB13021EF8E2E00942CE2 /* FileManager+Extension.swift in Sources */,
 				0930409E21ECF4CE009027E7 /* UIColor+Extension.swift in Sources */,
 				093040A121ECF4CE009027E7 /* UIView+LayoutConstraint.swift in Sources */,
 				0930409B21ECF4CE009027E7 /* String+Evaluatable.swift in Sources */,
@@ -346,11 +359,14 @@
 				093040A621ECF4CE009027E7 /* UIView+Animation.swift in Sources */,
 				0930409A21ECF4CE009027E7 /* Validatable.swift in Sources */,
 				093040AB21ECF4CE009027E7 /* UIApplication+topViewController.swift in Sources */,
+				099BB13221EF8ECC00942CE2 /* UINavigationBar+Extension.swift in Sources */,
+				099BB13621EF918E00942CE2 /* Utility.swift in Sources */,
 				0930409721ECF4CE009027E7 /* PropertyLoopable.swift in Sources */,
 				093040AD21ECF4CE009027E7 /* UIBarButtonItem+Extension.swift in Sources */,
 				099BB12E21EF74B900942CE2 /* UIImage+Extension.swift in Sources */,
+				099BB13421EF8FAE00942CE2 /* CAGradientLayer+Extension.swift in Sources */,
 				093040A021ECF4CE009027E7 /* UIView+Parent+ScrollView.swift in Sources */,
-				093040B321ECF4CE009027E7 /* DateExtension.swift in Sources */,
+				093040B321ECF4CE009027E7 /* Date+Extension.swift in Sources */,
 				093040A421ECF4CE009027E7 /* UIView+Nib.swift in Sources */,
 				0930409F21ECF4CE009027E7 /* UIImageView+imageColor.swift in Sources */,
 				093040A921ECF4CE009027E7 /* UIDevice+Type.swift in Sources */,
