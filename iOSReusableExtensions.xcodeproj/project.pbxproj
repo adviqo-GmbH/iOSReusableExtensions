@@ -15,7 +15,7 @@
 		0930409B21ECF4CE009027E7 /* String+Evaluatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406721ECF4CD009027E7 /* String+Evaluatable.swift */; };
 		0930409C21ECF4CE009027E7 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406821ECF4CD009027E7 /* ValidationRule.swift */; };
 		0930409D21ECF4CE009027E7 /* UIImage+resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406A21ECF4CD009027E7 /* UIImage+resizeImage.swift */; };
-		0930409E21ECF4CE009027E7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406B21ECF4CD009027E7 /* UIColor+Extension.swift */; };
+		0930409E21ECF4CE009027E7 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406B21ECF4CD009027E7 /* UIColor+Hex.swift */; };
 		0930409F21ECF4CE009027E7 /* UIImageView+imageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406C21ECF4CD009027E7 /* UIImageView+imageColor.swift */; };
 		093040A021ECF4CE009027E7 /* UIView+Parent+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406E21ECF4CD009027E7 /* UIView+Parent+ScrollView.swift */; };
 		093040A121ECF4CE009027E7 /* UIView+LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930406F21ECF4CD009027E7 /* UIView+LayoutConstraint.swift */; };
@@ -58,7 +58,7 @@
 		0930406721ECF4CD009027E7 /* String+Evaluatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Evaluatable.swift"; sourceTree = "<group>"; };
 		0930406821ECF4CD009027E7 /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
 		0930406A21ECF4CD009027E7 /* UIImage+resizeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+resizeImage.swift"; sourceTree = "<group>"; };
-		0930406B21ECF4CD009027E7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0930406B21ECF4CD009027E7 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		0930406C21ECF4CD009027E7 /* UIImageView+imageColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+imageColor.swift"; sourceTree = "<group>"; };
 		0930406E21ECF4CD009027E7 /* UIView+Parent+ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Parent+ScrollView.swift"; sourceTree = "<group>"; };
 		0930406F21ECF4CD009027E7 /* UIView+LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutConstraint.swift"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			children = (
 				099BB12C21EF749F00942CE2 /* UIImage */,
 				0930406A21ECF4CD009027E7 /* UIImage+resizeImage.swift */,
-				0930406B21ECF4CD009027E7 /* UIColor+Extension.swift */,
+				0958C77521F5F75300D864C7 /* UIColor */,
 				0930406C21ECF4CD009027E7 /* UIImageView+imageColor.swift */,
 				0930406D21ECF4CD009027E7 /* UIView */,
 				0930407521ECF4CD009027E7 /* NotificationCenter+Extension.swift */,
@@ -213,6 +213,14 @@
 				0930408121ECF4CE009027E7 /* String+Double.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		0958C77521F5F75300D864C7 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				0930406B21ECF4CD009027E7 /* UIColor+Hex.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		099BB12C21EF749F00942CE2 /* UIImage */ = {
@@ -352,7 +360,7 @@
 				093040A221ECF4CE009027E7 /* UIView+snapshotView.swift in Sources */,
 				093040A521ECF4CE009027E7 /* UIView+Positioning.swift in Sources */,
 				099BB13021EF8E2E00942CE2 /* FileManager+Extension.swift in Sources */,
-				0930409E21ECF4CE009027E7 /* UIColor+Extension.swift in Sources */,
+				0930409E21ECF4CE009027E7 /* UIColor+Hex.swift in Sources */,
 				093040A121ECF4CE009027E7 /* UIView+LayoutConstraint.swift in Sources */,
 				0930409B21ECF4CE009027E7 /* String+Evaluatable.swift in Sources */,
 				093040A821ECF4CE009027E7 /* UIViewController+Extension.swift in Sources */,
