@@ -12,7 +12,7 @@ import UIKit
  iOS Design
  https://kapeli.com/cheat_sheets/iOS_Design.docset/Contents/Resources/Documents/index
  */
-public enum DeviceType: Int
+@objc public enum DeviceType: Int
 {
     case iPhone4OrLess
     case iPhone5
@@ -29,10 +29,10 @@ public enum DeviceType: Int
     case unspecified
 }
 
-public extension UIDevice
+@objc public extension UIDevice
 {
     // MARK: - Public API
-    public var type: DeviceType {
+    @objc public var type: DeviceType {
         // iPhone
         
         // iPhone 3.5-inch (iPhone 4, iPhone 4S)
@@ -127,27 +127,33 @@ public extension UIDevice
         return .unspecified
     }
     
-    public var screenWidth: CGFloat {
+    @objc public var screenWidth: CGFloat {
         return UIScreen.main.bounds.size.width
     }
     
-    public var screenHeight: CGFloat {
+    @objc public var screenHeight: CGFloat {
         return UIScreen.main.bounds.size.height
     }
     
-    public var statusBarHeight: CGFloat {
+    @objc public var statusBarHeight: CGFloat {
         return UIApplication.shared.statusBarFrame.height
     }
     
-    public var tabBarHeight: CGFloat {
+    @objc public var tabBarHeight: CGFloat {
         if self.type == .iPhoneX {
-            return 90
+            return 88
+        }
+        if self.type == .iPhoneXR {
+            return 88
+        }
+        if self.type == .iPhoneXMax {
+            return 88
         }
         if UIDevice.current.userInterfaceIdiom == .pad {
             return 85
         }
         // standard tab bar height for iPhone = 49
-        return 60
+        return 49
     }
     
     // MARK: - Private
