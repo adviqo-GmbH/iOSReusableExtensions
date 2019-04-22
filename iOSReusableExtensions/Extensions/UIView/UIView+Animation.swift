@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIView
 {
-    public func set(anchorPoint: CGPoint)
+    func set(anchorPoint: CGPoint)
     {
         let newPoint = CGPoint(
             x: self.bounds.size.width * anchorPoint.x,

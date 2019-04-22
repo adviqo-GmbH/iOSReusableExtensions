@@ -18,22 +18,22 @@ import UIKit
 
 public extension UITextField
 {
-    public var isEmpty: Bool {
+    var isEmpty: Bool {
         return text?.isEmpty == true
     }
     
-    public var trimmedText: String? {
+    var trimmedText: String? {
         return text?.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    public func addPaddingLeft(_ padding: CGFloat)
+    func addPaddingLeft(_ padding: CGFloat)
     {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: frame.height))
         leftView = paddingView
         leftViewMode = .always
     }
     
-    public func addPaddingLeftIcon(_ image: UIImage, padding: CGFloat)
+    func addPaddingLeftIcon(_ image: UIImage, padding: CGFloat)
     {
         let imageView = UIImageView(image: image)
         imageView.contentMode = .center

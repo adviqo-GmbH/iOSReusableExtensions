@@ -10,12 +10,12 @@ import UIKit
 
 public extension UIColor
 {
-    public convenience init(hex: String)
+    convenience init(hex: String)
     {
         self.init(hex: hex, alpha:1)
     }
     
-    public convenience init(hexString:String)
+    convenience init(hexString:String)
     {
         let hexString = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let scanner  = Scanner(string: hexString)
@@ -39,7 +39,7 @@ public extension UIColor
         self.init(red:red, green:green, blue:blue, alpha:1)
     }
     
-    public convenience init(hex: String, alpha: CGFloat)
+    convenience init(hex: String, alpha: CGFloat)
     {
         var hexWithoutSymbol = hex
         if hexWithoutSymbol.hasPrefix("#") {

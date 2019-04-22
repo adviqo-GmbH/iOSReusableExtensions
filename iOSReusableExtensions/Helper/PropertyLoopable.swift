@@ -20,7 +20,7 @@ public protocol PropertyLoopable
 
 public extension PropertyLoopable
 {
-    public func allProperties() throws -> [String: Any]
+    func allProperties() throws -> [String: Any]
     {
         
         var result: [String: Any] = [:]
@@ -45,7 +45,7 @@ public extension PropertyLoopable
         return result
     }
     
-    public func allValues() throws -> [Any]
+    func allValues() throws -> [Any]
     {
         let mirror = Mirror(reflecting: self)
         guard

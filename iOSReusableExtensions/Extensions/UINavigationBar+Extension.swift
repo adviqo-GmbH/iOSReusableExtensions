@@ -10,7 +10,7 @@ import UIKit
 
 @objc public extension UINavigationBar
 {
-    @objc public func setGradientBackground(colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint)
+    @objc func setGradientBackground(colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint)
     {
         let gradientFrame:CGRect
         if UIDevice.current.type == .iPhoneX {
@@ -23,7 +23,7 @@ import UIKit
         setBackgroundImage(gradientLayer.creatGradientImage(), for: UIBarMetrics.default)
     }
     
-    @objc public func setShadow(withColor color: UIColor, opacity: Float, offset: CGSize, andRadius radius: CGFloat)
+    @objc func setShadow(withColor color: UIColor, opacity: Float, offset: CGSize, andRadius radius: CGFloat)
     {
         layer.masksToBounds = false
         layer.shadowColor = color.cgColor

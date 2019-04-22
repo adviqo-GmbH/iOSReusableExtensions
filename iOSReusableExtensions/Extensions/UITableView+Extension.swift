@@ -10,26 +10,26 @@ import UIKit
 
 public extension UITableView
 {
-    public func registerCellClass(_ cellClass: AnyClass)
+    func registerCellClass(_ cellClass: AnyClass)
     {
         let identifier = String.className(cellClass)
         self.register(cellClass, forCellReuseIdentifier: identifier)
     }
     
-    public func registerCellNib(_ cellClass: AnyClass)
+    func registerCellNib(_ cellClass: AnyClass)
     {
         let identifier = String.className(cellClass)
         let nib = UINib(nibName: identifier, bundle: nil)
         self.register(nib, forCellReuseIdentifier: identifier)
     }
     
-    public func registerHeaderFooterViewClass(_ viewClass: AnyClass)
+    func registerHeaderFooterViewClass(_ viewClass: AnyClass)
     {
         let identifier = String.className(viewClass)
         self.register(viewClass, forHeaderFooterViewReuseIdentifier: identifier)
     }
     
-    public func registerHeaderFooterViewNib(_ viewClass: AnyClass)
+    func registerHeaderFooterViewNib(_ viewClass: AnyClass)
     {
         let identifier = String.className(viewClass)
         let nib = UINib(nibName: identifier, bundle: nil)

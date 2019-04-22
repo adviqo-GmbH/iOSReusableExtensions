@@ -10,7 +10,7 @@ import UIKit
 
 @objc public extension CAGradientLayer
 {
-    public convenience init(frame: CGRect, colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint)
+    convenience init(frame: CGRect, colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint)
     {
         self.init()
         self.frame = frame
@@ -22,7 +22,7 @@ import UIKit
         self.endPoint = endPoint
     }
     
-    public func creatGradientImage() -> UIImage? {
+    func creatGradientImage() -> UIImage? {
         
         var image: UIImage? = nil
         UIGraphicsBeginImageContext(bounds.size)

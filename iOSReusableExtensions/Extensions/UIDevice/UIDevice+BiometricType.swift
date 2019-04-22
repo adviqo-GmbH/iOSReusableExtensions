@@ -14,11 +14,12 @@ public enum BiometricType
     case none
     case touch
     case face
+    case unknown
 }
 
 public extension UIDevice
 {
-    static public func biometricType() -> BiometricType
+    static func biometricType() -> BiometricType
     {
         let authContext = LAContext()
         var error: NSError?
@@ -34,6 +35,8 @@ public extension UIDevice
                 return .touch
             case .faceID:
                 return .face
+            @unknown default:
+                return .unknown
             }
         } else {
             return authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) ? .touch : .none

@@ -14,14 +14,14 @@ import Foundation
  */
 public extension Optional where Wrapped == String
 {
-    public var nilIfEmpty: String? {
+    var nilIfEmpty: String? {
         guard let strongSelf = self else {
             return nil
         }
         return strongSelf.isEmpty ? nil : strongSelf
     }
     
-    public var firstUppercased: String? {
+    var firstUppercased: String? {
         guard let strongSelf = self else {
             return nil
         }

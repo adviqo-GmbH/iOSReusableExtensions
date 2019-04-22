@@ -11,7 +11,7 @@ import Foundation
 // Double value from string
 public extension String
 {
-    public var doubleValue: Double? {
+    var doubleValue: Double? {
         get {
             guard self.isValidDouble(withDecimalPlaces: 2) else {
                 return nil
@@ -30,7 +30,7 @@ public extension String
         }
     }
     
-    public func isValidDouble(withDecimalPlaces decimalPlaces: Int) -> Bool
+    func isValidDouble(withDecimalPlaces decimalPlaces: Int) -> Bool
     {
         let updatedSelf: String = self.components(separatedBy: CharacterSet.whitespaces).joined()
         

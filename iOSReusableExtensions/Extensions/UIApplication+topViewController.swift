@@ -14,7 +14,7 @@ import UIKit
         return UIApplication.topViewController()
     }
     
-    public class func topViewController(_ viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
+    class func topViewController(_ viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
     {
         // UINavigationController
         if let nav = viewController as? UINavigationController {

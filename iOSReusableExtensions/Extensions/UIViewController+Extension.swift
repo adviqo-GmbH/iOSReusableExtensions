@@ -10,12 +10,12 @@ import UIKit
 
 public extension UIViewController
 {
-    public class func loadFromNib<T: UIViewController>() -> T
+    class func loadFromNib<T: UIViewController>() -> T
     {
         return T(nibName: String(describing: self), bundle: nil)
     }
     
-    public var isVisible: Bool {
+    var isVisible: Bool {
         return isViewLoaded && view.window != nil
     }
 }

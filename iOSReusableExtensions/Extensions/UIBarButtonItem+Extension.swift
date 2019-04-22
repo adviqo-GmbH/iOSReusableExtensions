@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIBarButtonItem
 {
-    public var isHidden: Bool {
+    var isHidden: Bool {
         set {
             self.isEnabled = newValue
             self.tintColor = newValue ? self.tintColor : UIColor.clear

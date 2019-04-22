@@ -10,7 +10,7 @@ import Foundation
 
 public extension NumberFormatter
 {
-    static public var double: NumberFormatter {
+    static var double: NumberFormatter {
         let currencyFormatter = NumberFormatter()
         currencyFormatter.locale = Locale.current
         currencyFormatter.allowsFloats = true

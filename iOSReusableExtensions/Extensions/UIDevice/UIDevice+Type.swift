@@ -32,7 +32,7 @@ import UIKit
 @objc public extension UIDevice
 {
     // MARK: - Public API
-    @objc public var type: DeviceType {
+    @objc var type: DeviceType {
         // iPhone
         
         // iPhone 3.5-inch (iPhone 4, iPhone 4S)
@@ -127,19 +127,19 @@ import UIKit
         return .unspecified
     }
     
-    @objc public var screenWidth: CGFloat {
+    @objc var screenWidth: CGFloat {
         return UIScreen.main.bounds.size.width
     }
     
-    @objc public var screenHeight: CGFloat {
+    @objc var screenHeight: CGFloat {
         return UIScreen.main.bounds.size.height
     }
     
-    @objc public var statusBarHeight: CGFloat {
+    @objc var statusBarHeight: CGFloat {
         return UIApplication.shared.statusBarFrame.height
     }
     
-    @objc public var tabBarHeight: CGFloat {
+    @objc var tabBarHeight: CGFloat {
         if self.type == .iPhoneX {
             return 88
         }

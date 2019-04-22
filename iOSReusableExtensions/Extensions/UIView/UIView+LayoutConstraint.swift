@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIView
 {
-    @objc public func constraint(forAttribute attribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint?
+    @objc func constraint(forAttribute attribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint?
     {
         if
             attribute == .bottom
@@ -44,7 +44,7 @@ public extension UIView
         return nil
     }
     
-    @objc public func constraint(withId perhapsId: String?) -> NSLayoutConstraint?
+    @objc func constraint(withId perhapsId: String?) -> NSLayoutConstraint?
     {
         guard
             let id = perhapsId

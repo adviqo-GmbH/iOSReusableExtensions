@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIView
 {
-    public func snapshotImage() -> UIImage?
+    func snapshotImage() -> UIImage?
     {
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0)
         drawHierarchy(in: bounds, afterScreenUpdates: false)
@@ -19,7 +19,7 @@ public extension UIView
         return snapshotImage
     }
     
-    public func snapshotView() -> UIView?
+    func snapshotView() -> UIView?
     {
         if let snapshotImage = snapshotImage() {
             return UIImageView(image: snapshotImage)

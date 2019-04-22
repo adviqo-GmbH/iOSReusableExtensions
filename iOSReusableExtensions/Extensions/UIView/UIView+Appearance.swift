@@ -10,13 +10,13 @@ import UIKit
 
 public extension UIView
 {
-    public func makeRoundedCorners(radius: CGFloat)
+    func makeRoundedCorners(radius: CGFloat)
     {
         self.layer.cornerRadius = radius
         self.clipsToBounds = true
     }
     
-    public func setGradientBackground(colorTop: UIColor, colorBottom: UIColor)
+    func setGradientBackground(colorTop: UIColor, colorBottom: UIColor)
     {
         DispatchQueue.main.async {
             let gradientLayer = CAGradientLayer()
@@ -29,7 +29,7 @@ public extension UIView
         }
     }
     
-    public class func setupGradientImage(colorTop: UIColor, colorBottom: UIColor) -> UIImage?
+    class func setupGradientImage(colorTop: UIColor, colorBottom: UIColor) -> UIImage?
     {
         let gradient = CAGradientLayer()
         let size = UIScreen.main.bounds.size
@@ -44,7 +44,7 @@ public extension UIView
         return outputImage
     }
     
-    public func createShadow(withColor color: UIColor)
+    func createShadow(withColor color: UIColor)
     {
         self.layer.masksToBounds = false
         self.layer.shadowOffset = CGSize(width: 0, height: 0)

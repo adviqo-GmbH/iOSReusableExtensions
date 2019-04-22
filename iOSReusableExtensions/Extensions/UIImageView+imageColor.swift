@@ -10,7 +10,7 @@ import UIKit
 
 @objc public extension UIImageView
 {
-    @objc public var imageColor: UIColor? {
+    @objc var imageColor: UIColor? {
         get {
             return self.tintColor
         }
