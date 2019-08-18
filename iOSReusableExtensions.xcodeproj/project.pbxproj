@@ -47,6 +47,8 @@
 		09C3FC27226DBE9100754AA9 /* Sequence+Perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3FC26226DBE9100754AA9 /* Sequence+Perform.swift */; };
 		09C3FC29226DC0D800754AA9 /* UIViewController+isModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3FC28226DC0D800754AA9 /* UIViewController+isModal.swift */; };
 		09C3FC2C226DC11F00754AA9 /* UIStackView+RemoveAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3FC2B226DC11F00754AA9 /* UIStackView+RemoveAll.swift */; };
+		09DC69032309CD07006D042B /* DispatchTimeInterval+seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC69022309CD07006D042B /* DispatchTimeInterval+seconds.swift */; };
+		09DC69062309CDD6006D042B /* UINavigationController+isViewControllerListed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DC69052309CDD6006D042B /* UINavigationController+isViewControllerListed.swift */; };
 		EEB6DF8A8D8ADCEF417D5282 /* libPods-iOSReusableExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CEBA99FF530157A715000E /* libPods-iOSReusableExtensions.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,8 @@
 		09C3FC26226DBE9100754AA9 /* Sequence+Perform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Perform.swift"; sourceTree = "<group>"; };
 		09C3FC28226DC0D800754AA9 /* UIViewController+isModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+isModal.swift"; sourceTree = "<group>"; };
 		09C3FC2B226DC11F00754AA9 /* UIStackView+RemoveAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+RemoveAll.swift"; sourceTree = "<group>"; };
+		09DC69022309CD07006D042B /* DispatchTimeInterval+seconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTimeInterval+seconds.swift"; sourceTree = "<group>"; };
+		09DC69052309CDD6006D042B /* UINavigationController+isViewControllerListed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+isViewControllerListed.swift"; sourceTree = "<group>"; };
 		61010524911BA247967205C3 /* Pods-iOSReusableExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSReusableExtensions.release.xcconfig"; path = "Target Support Files/Pods-iOSReusableExtensions/Pods-iOSReusableExtensions.release.xcconfig"; sourceTree = "<group>"; };
 		BEC9BECD7C38848D355029FB /* Pods-iOSReusableExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSReusableExtensions.debug.xcconfig"; path = "Target Support Files/Pods-iOSReusableExtensions/Pods-iOSReusableExtensions.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CEBA99FF530157A715000E /* libPods-iOSReusableExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSReusableExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +168,8 @@
 		0930406921ECF4CD009027E7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				09DC69042309CDC4006D042B /* UINavigationController */,
+				09DC69012309CCE7006D042B /* DispatchTimeInterval */,
 				09C3FC2A226DC10A00754AA9 /* UIStackView */,
 				09C3FC25226DBE7500754AA9 /* Sequence */,
 				09C3FC24226DBE3800754AA9 /* UINavigationBar */,
@@ -360,6 +366,22 @@
 			path = UIStackView;
 			sourceTree = "<group>";
 		};
+		09DC69012309CCE7006D042B /* DispatchTimeInterval */ = {
+			isa = PBXGroup;
+			children = (
+				09DC69022309CD07006D042B /* DispatchTimeInterval+seconds.swift */,
+			);
+			path = DispatchTimeInterval;
+			sourceTree = "<group>";
+		};
+		09DC69042309CDC4006D042B /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				09DC69052309CDD6006D042B /* UINavigationController+isViewControllerListed.swift */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
 		D85AD1BB17D8FA58693862E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +534,7 @@
 				093040B321ECF4CE009027E7 /* Date+Extension.swift in Sources */,
 				093040A421ECF4CE009027E7 /* UIView+Nib.swift in Sources */,
 				0930409F21ECF4CE009027E7 /* UIImageView+imageColor.swift in Sources */,
+				09DC69032309CD07006D042B /* DispatchTimeInterval+seconds.swift in Sources */,
 				093040A921ECF4CE009027E7 /* UIDevice+Type.swift in Sources */,
 				093040A321ECF4CE009027E7 /* UIView+Appearance.swift in Sources */,
 				093040B421ECF4CE009027E7 /* UIScrollView+scrollTo.swift in Sources */,
@@ -519,6 +542,7 @@
 				093040B021ECF4CE009027E7 /* String+Optional.swift in Sources */,
 				093040AA21ECF4CE009027E7 /* UIDevice+BiometricType.swift in Sources */,
 				093040AE21ECF4CE009027E7 /* String+Extension.swift in Sources */,
+				09DC69062309CDD6006D042B /* UINavigationController+isViewControllerListed.swift in Sources */,
 				093040B521ECF4CE009027E7 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
