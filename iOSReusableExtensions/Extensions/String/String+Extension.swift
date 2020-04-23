@@ -87,3 +87,14 @@ public extension String
         }
     }
 }
+
+@objc public extension NSString {
+    func stringWith(format: String) -> NSString? {
+        guard let mask = try? Mask(format: format) else {
+            return nil
+        }
+        let valueString = self as String
+        let formattedString = mask.apply(toText: CaretString(string: valueString, caretPosition: valueString.endIndex)).formattedText.string
+        return formattedString as NSString
+    }
+}
