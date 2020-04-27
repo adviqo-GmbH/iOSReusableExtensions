@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UITableView
+@objc public extension UITableView
 {
     func registerCellClass(_ cellClass: AnyClass)
     {
