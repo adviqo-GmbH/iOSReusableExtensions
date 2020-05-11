@@ -33,3 +33,16 @@ public extension UITableViewCell {
         return String.className(Self.self)
     }
 }
+
+public extension UITableView {
+    func dequeueCell<CellType: UITableViewCell>(for indexPath: IndexPath) -> CellType {
+        guard let cell = dequeueReusableCell(
+            withIdentifier: CellType.reuseIdentifier,
+            for: indexPath
+        ) as? CellType
+        else {
+            fatalError("Wrong type of cell in tableView")
+        }
+        return cell
+    }
+}
