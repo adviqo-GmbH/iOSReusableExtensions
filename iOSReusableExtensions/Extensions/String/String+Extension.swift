@@ -44,10 +44,6 @@ public extension String
         return String(self[index...])
     }
     
-    var length: Int {
-        return self.count
-    }
-    
     var withoutSpaces: String {
         return self.replacingOccurrences(of: " ", with: "")
     }
@@ -69,10 +65,6 @@ public extension String
         var cleanedString = self.replacingOccurrences(of: "\"", with: "")
         cleanedString = cleanedString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         return cleanedString
-    }
-    
-    var localized: String {
-        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
     }
     
     var isValidURL: Bool {
