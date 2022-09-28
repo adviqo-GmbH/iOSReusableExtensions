@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOSReusableExtensions"
-  s.version      = "1.0.16"
+  s.version      = "1.0.18"
   s.summary      = "Set of useful Swift extensions"
 
   # This description is used to generate tags and improve search results.
