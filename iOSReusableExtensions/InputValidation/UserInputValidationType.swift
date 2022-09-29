@@ -373,9 +373,9 @@ public enum UserInputValidationType
                 let result: Mask.Result = mask.apply(
                     toText: CaretString(
                         string: input,
-                        caretPosition: input.endIndex
-                    ),
-                    autocomplete: false
+                        caretPosition: input.endIndex,
+                        caretGravity: CaretString.CaretGravity.forward(autocomplete: false)
+                    )
                 )
                 return result.complete
             }

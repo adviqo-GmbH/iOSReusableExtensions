@@ -87,7 +87,7 @@ public extension String
             return nil
         }
         let valueString = self as String
-        let formattedString = mask.apply(toText: CaretString(string: valueString, caretPosition: valueString.endIndex)).formattedText.string
+        let formattedString = mask.apply(toText: CaretString(string: valueString, caretPosition: valueString.endIndex, caretGravity: CaretString.CaretGravity.forward(autocomplete: false))).formattedText.string
         return formattedString as NSString
     }
 }
